@@ -52,7 +52,7 @@ const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.partic
 const itsMelexx = [botNumber, ...owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(msg.sender)
 const itsMe = msg.sender == botNumber ? true : false
 const text = q = args.join(" ")
-const isCreator = [`${setting.ownerNumber}`,"6283834558105@s.whatsapp.net"].includes(sender) ? true : false
+const isCreator = [`${setting.ownerNumber}`,"62882000921484@s.whatsapp.net"].includes(sender) ? true : false
 const quoted = msg.quoted ? msg.quoted : msg
 const mime = (quoted.msg || quoted).mimetype || ''
 const jam = moment.tz('asia/jakarta').format('HH:mm:ss')
@@ -123,12 +123,12 @@ if (command) {
 lexx.readMessages([msg.key])
 }
 
-let fakenya = {key : {participant : '0@s.whatsapp.net', ...(msg.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `LexBotzz...🌷`, jpegThumbnail: fs.readFileSync('./lib/logo.jpg')}}}
+let fakenya = {key : {participant : '0@s.whatsapp.net', ...(msg.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `𝕯𝖊𝖝𝖙𝖊𝖗97_`, jpegThumbnail: fs.readFileSync('./lib/logo.jpg')}}}
 
 switch (command) {
 case 'menu':{
 let ownerNya = setting.ownerNumber
-menu =`═════[ 𝙇𝙀𝙓𝘽𝙊𝙏-𝙈𝘿 ]═════
+menu =`═════[ 𝕯𝖊𝖝𝖙𝖊𝖗97_ ]═════
 
 ${ucapanWaktu} @${sender.split('@')[0]}
 
@@ -178,7 +178,6 @@ bug =`╔═══《 𝙈𝘼𝙄𝙉 𝙈𝙀𝙉𝙐 》═══⊱
 ╠〉${prefix}join <link grup>
 ╠〉${prefix}stats (cek status)
 ╠〉${prefix}restart (restart bot)
-╠〉${prefix}script (source code)
 ╚═════════════════`
 lexx.sendMessage(msg.chat, {text:bug}, {quoted:fakenya})
 }

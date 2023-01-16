@@ -19,7 +19,7 @@ const { version, isLatest } = await fetchLatestBaileysVersion();
 const lexx = lexxConnect({
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: ['Lexxt Official','Safari','1.0.0'],
+browser: ['Dexter97_','Safari','1.0.0'],
 auth: state,
 version
 })

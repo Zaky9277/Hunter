@@ -238,14 +238,7 @@ bug =`╔══》𝔸𝕋𝕋𝔸ℂ𝕂 𝔾ℝ𝕆𝕌ℙ
 lexx.sendMessage(msg.chat, {text:bug}, {quoted:fakenya})
 }
 break
-case 'script':{
-sc = `Mau Buy Scnya? 
-Chat WhatsApp Admin
-Wa.me/6283834558105
-Harga 75k negoin`
-msg.reply(sc)
-}
-break
+
 case 'group': case 'grup':
 if (!isGroup) return msg.reply('Perintah ini hanya bisa digunakan digrup')
 if (!isGroupAdmins) return msg.reply('Perintah ini hanya bisa digunakan oleh Admin Grup')
@@ -331,7 +324,7 @@ msg.reply(respon)
 break
 case 'listusr':{
 if (!isCreator) return msg.reply(`sorry anda sepertinya bukan pemilik bot`)
-let listusr =`*List user bug lexxy*\n\ntotal user : ${owner.length}\n`
+let listusr =`*List user *\n\ntotal user : ${owner.length}\n`
 var no = 1
 for (let x of owner) {
 listusr +=`\nUser: ${no++}\nID: ${x}\n\n`
